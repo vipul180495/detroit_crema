@@ -1,0 +1,1241 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../Functions/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.4">
+    
+    
+      
+        <title>Main GUI - Detroit Crema Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.50c56a3b.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#libraries-and-imports" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Detroit Crema Documentation" class="md-header__button md-logo" aria-label="Detroit Crema Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Detroit Crema Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Main GUI
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="purple"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="lime"  aria-hidden="true"  type="radio" name="__palette" id="__palette_1">
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  Python Scripts
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Detroit Crema Documentation" class="md-nav__button md-logo" aria-label="Detroit Crema Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Detroit Crema Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Python Scripts
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Python Scripts
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Main GUI
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Main GUI
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#libraries-and-imports" class="md-nav__link">
+    <span class="md-ellipsis">
+      libraries and imports
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#class-heating_up" class="md-nav__link">
+    <span class="md-ellipsis">
+      Class Heating_up
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#class-brewing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Class Brewing
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#class-welcome-page" class="md-nav__link">
+    <span class="md-ellipsis">
+      Class Welcome Page
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#class-brewprofile-window" class="md-nav__link">
+    <span class="md-ellipsis">
+      Class BrewProfile Window
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#class-defaulttemp" class="md-nav__link">
+    <span class="md-ellipsis">
+      Class DefaultTemp
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#class-brewwindow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Class BrewWindow
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#class-brewcustomwindow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Class BrewCustomWindow
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#class-custom-profile-window" class="md-nav__link">
+    <span class="md-ellipsis">
+      Class Custom Profile Window
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#class-textboxes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Class Textboxes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#class-showgraph" class="md-nav__link">
+    <span class="md-ellipsis">
+      Class ShowGraph
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#main" class="md-nav__link">
+    <span class="md-ellipsis">
+      Main
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Functions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Functions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hx711/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    hx711
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PlotProfile/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PlotProfile
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>Main GUI</h1>
+
+<p>This page contains the main GUI page python code</p>
+<h2 id="libraries-and-imports">libraries and imports</h2>
+<pre><code class="language-py">import tkinter as tk
+from tkinter.ttk import *
+from tkinter.font import Font
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import Setups as s
+import Functions as f
+from matplotlib.backends.backend_tkagg import (FigureCanvasTkAgg, NavigationToolbar2Tk)
+import CustomPlotMaker as m
+from csv import DictWriter
+</code></pre>
+<h2 id="class-heating_up">Class Heating_up</h2>
+<pre><code class="language-py">class Heating_Up(s.threading.Thread):
+    &quot;&quot;&quot;
+    Thread class for heating up the Magik Box.
+    This class extends the threading.Thread class and is designed to run the
+    Heat_Up method from Function.py ('f') in a separate thread.
+    Attributes:
+        - None
+    Methods:
+    - run(): Overrides the run method to execute the Heat_Up method.
+    &quot;&quot;&quot;
+    def __init__(self):
+        &quot;&quot;&quot;
+        Constructor for the Heating_up thread
+        Parameters:
+        - None
+        &quot;&quot;&quot;
+        super().__init__()
+        pass
+    def run(self):
+        &quot;&quot;&quot;
+        Run method for the thread
+        calls and execute the Heat_Up method form Function.py('f')
+        Parameter:
+        - None
+        &quot;&quot;&quot;
+        f.Heat_Up()
+</code></pre>
+<h2 id="class-brewing">Class Brewing</h2>
+<pre><code class="language-py">class Brewing(s.threading.Thread):
+    &quot;&quot;&quot;
+    Thread class for brewing with the Magik Box.
+    This class extends the threading.Thread class and is designed to run the
+    Infuse method from Function.py ('f') in a separate thread.
+    Attributes:
+        - None
+    Methods:
+    - run(): Overrides the run method to execute the Infuse method.
+    &quot;&quot;&quot;
+    def __init__(self):
+        &quot;&quot;&quot;
+        Constructor for the Brewing thread
+        Parameters:
+        - None
+        &quot;&quot;&quot;
+        super().__init__()
+        pass
+    def run(self):
+        &quot;&quot;&quot;
+        Run method for the thread
+        calls and execute the Infuse method form Function.py('f')
+        Parameter:
+        - None
+        &quot;&quot;&quot;
+        f.Infuse()
+</code></pre>
+<h2 id="class-welcome-page">Class Welcome Page</h2>
+<pre><code class="language-py">class WelcomePage(tk.Tk):
+    &quot;&quot;&quot;
+    Main GUI class for the Welcome page of the Magik Box.
+    This class represents the main window of the application where users are welcomed.
+    Attributes:
+    - None
+    Methods:
+    - __init__(): Initializes the WelcomePage instance, setting up the window and UI components.
+    - go_to_home_page(): Switches to the BrewProfileWindow and starts the Heating_Up thread.
+    &quot;&quot;&quot;
+    def __init__(self):
+        &quot;&quot;&quot;
+        Constructor for the WelcomePage class.
+        Initializes the WelcomePage instance.
+        Parameters:
+        - None
+        &quot;&quot;&quot;
+        super().__init__()
+        self.title(&quot;Welcome&quot;)
+        self.geometry(&quot;800x480&quot;)
+        self.configure(bg = &quot;#04043B&quot;)
+        self.button_8_image = tk.PhotoImage(file=(&quot;button_8.png&quot;))
+        self.welcome_text = tk.Label(self, text=&quot;Welcome to the Magik Box&quot;, compound=&quot;center&quot;, font=(&quot;Arial&quot;, 50), bg= &quot;#04043B&quot;, fg= &quot;#ff8c00&quot;, pady=30).pack()
+        self.button_8 = tk.Button(self, image=self.button_8_image, bg = &quot;#04043B&quot;, highlightthickness= 0, borderwidth=0, command = lambda: [s.heat_up_flag == True, self.go_to_home_page()])
+        self.button_8.place(x=277, y=244)
+    def go_to_home_page(self):
+        &quot;&quot;&quot;
+        Transition to the Home page.
+        Hides the current window, creates a new BrewProfileWindow instance,
+        and starts a Heating_Up thread.
+        Parameters:
+        - None
+        &quot;&quot;&quot;
+        global heat_up_thread
+        self.withdraw() 
+        self.another_window = BrewProfileWindow(self)
+        heat_up_thread = Heating_Up()
+        heat_up_thread.start()
+</code></pre>
+<h2 id="class-brewprofile-window">Class BrewProfile Window</h2>
+<pre><code class="language-py">class BrewProfileWindow(tk.Toplevel):
+    &quot;&quot;&quot;
+    Brew Profile window to select the type of profile the user wants to use.
+    Attributes:
+    - parent: The parent window.
+    Methods:
+    - __init__(self, parent): Initializes the BrewProfileWindow instance, setting up the window and UI components.
+    - go_to_default_temps(self): Switches to the DefaultTemps window.
+    - set_default_plot(self): Sets the target time and pressure arrays for the default profile.
+    - set_blooming_plot(self): Sets the target time and pressure arrays for the blooming profile.
+    - set_bloomingallonge_plot(self): Sets the target time and pressure arrays for the blooming allonge profile.
+    - set_allonge_plot(self): Sets the target time and pressure arrays for the allonge profile.
+    - go_to_text_boxes(self): Switches to the TextBoxes window.
+    &quot;&quot;&quot;
+    def __init__(self, parent):
+        super().__init__(parent)
+        self.title((&quot;Brew Profile Selection&quot;))
+        # Set Window Dimensions
+        self.geometry(&quot;800x480&quot;)
+        # Set the Background Color of Window
+        self.configure(bg = &quot;#04043B&quot;)
+        # Make Window Fullscreen
+        self.home_image = tk.PhotoImage(file=(&quot;image_1.png&quot;))
+        self.button_1_image = tk.PhotoImage(file=(&quot;button_4.png&quot;))
+        self.button_2_image = tk.PhotoImage(file=(&quot;button_5.png&quot;))
+        self.button_3_image = tk.PhotoImage(file=(&quot;button_6.png&quot;))
+        self.button_9_image = tk.PhotoImage(file=(&quot;button_9.png&quot;))
+        self.button_10_image = tk.PhotoImage(file=(&quot;button_10.png&quot;))
+        self.button_11_image = tk.PhotoImage(file=(&quot;button_11.png&quot;))
+        self.profile = tk.StringVar()
+
+        # Place the Logo
+        tk.Label(self, image=self.home_image, borderwidth=0,compound=&quot;center&quot;,highlightthickness = 0, padx=0, pady=30).pack()
+        self.button_1 = tk.Button(self, image=self.button_1_image, bg= &quot;#04043B&quot;, command= lambda: [self.profile == 'Blooming', self.go_to_default_temps(), self.set_blooming_plot()])
+        self.button_1.place(x=550, y=150)
+        self.button_2 = tk.Button(self, image=self.button_2_image, bg= &quot;#04043B&quot;, command=self.go_to_text_boxes)
+        self.button_2.place(x=30, y=150)
+        self.button_3 = tk.Button(self, image=self.button_3_image, bg= &quot;#04043B&quot;, command= lambda: [self.profile == 'Default', self.go_to_default_temps(), self.set_default_plot()])
+        self.button_3.place(x=290, y=150)
+        self.button_4 = tk.Button(self, image=self.button_11_image, bg= &quot;#04043B&quot;, command= lambda: [self.profile == 'Blooming Allonge', self.go_to_default_temps(), self.set_bloomingallonge_plot()])
+        self.button_4.place(x=150, y=250)
+        self.button_5 = tk.Button(self, image=self.button_10_image, bg= &quot;#04043B&quot;, command= lambda: [self.profile == 'Allonge', self.go_to_default_temps(), self.set_allonge_plot()])
+        self.button_5.place(x=420, y=250)
+
+        self.purge_button = tk.Button(self, image=self.button_9_image, bg= &quot;#04043B&quot;)
+        self.purge_button.place(x = 280, y = 380)
+    def go_to_default_temps(self):
+        &quot;&quot;&quot;
+        Switches to the DefaultTemps window.
+        &quot;&quot;&quot;
+        self.default_temps = DefaultTemps(self)
+        self.withdraw()
+    def set_default_plot(self):
+        &quot;&quot;&quot;
+        Sets the target time and pressure arrays for the default profile.
+        &quot;&quot;&quot;
+        s.targ_time_arr, s.targ_pressure_arr = [0,8,13.5,19,24.5,30], [1,1,9,9,9,9] 
+        s.preinfuse_time = 8
+        s.preinfuse_bar = 1
+        s.brew_time = 30
+    def set_blooming_plot(self):
+        &quot;&quot;&quot;
+        Sets the target time and pressure arrays for the blooming profile.
+        &quot;&quot;&quot;
+        s.targ_time_arr, s.targ_pressure_arr = [0,8,13.5,19,24.5,35], [3,3,9,9,0,0]
+        s.preinfuse_time = 8
+        s.preinfuse_bar = 3
+        s.brew_time = 35
+    def set_bloomingallonge_plot(self):
+        &quot;&quot;&quot;
+        Sets the target time and pressure arrays for the blooming allonge profile.
+        &quot;&quot;&quot;
+        s.targ_time_arr, s.targ_pressure_arr = [0,10,20,30,40,50], [1,1,2,2,2,1]
+        s.preinfuse_time = 10
+        s.preinfuse_bar = 1
+        s.brew_time = 50
+    def set_allonge_plot(self):
+        &quot;&quot;&quot;
+        Sets the target time and pressure arrays for the allonge profile.
+        &quot;&quot;&quot;
+        s.targ_time_arr, s.targ_pressure_arr = [0,8,13.5,19,24.5,30], [1,1,1,1,1,1,1]
+        s.preinfuse_time = 8
+        s.preinfuse_bar = 1
+        s.brew_time = 30
+    def go_to_text_boxes(self):
+        &quot;&quot;&quot;
+        Switches to the TextBoxes window.
+        &quot;&quot;&quot;
+        self.text_boxes = TextBoxes(self)
+        self.withdraw()
+</code></pre>
+<h2 id="class-defaulttemp">Class DefaultTemp</h2>
+<pre><code class="language-py">class DefaultTemps(tk.Toplevel):
+    &quot;&quot;&quot;
+    Home Page window to set default temperatures and navigate to the BrewWindow.
+
+    Attributes:
+    - parent: The parent window.
+
+    Methods:
+    - __init__(self, parent): Initializes the DefaultTemps instance, setting up the window and UI components.
+    - navigate_to_window(self): Switches to the BrewWindow.
+    - set_dark_temp(self): Sets the target temperature to 90.
+    - set_med_temp(self): Sets the target temperature to 98.
+    - set_light_temp(self): Sets the target temperature to 100.
+    - get_weight_targ_val(self): Retrieves and sets the target weight value.
+    - go_back(self): Shows the parent window and hides the current window.
+    - get_data(self): Retrieves data and writes it to a CSV file.
+    &quot;&quot;&quot;
+    def __init__(self, parent):
+        super().__init__(parent)
+        self.title(&quot;Home Page&quot;)
+        self.geometry(&quot;800x480&quot;)
+        self.configure(bg = &quot;#04043B&quot;)
+        self.home_image = tk.PhotoImage(file=(&quot;image_1.png&quot;))
+        self.button_1_image = tk.PhotoImage(file=(&quot;button_1.png&quot;))
+        self.button_2_image = tk.PhotoImage(file=(&quot;button_2.png&quot;))
+        self.button_3_image = tk.PhotoImage(file=(&quot;button_3.png&quot;))
+        self.weight = tk.IntVar()
+
+        #Create Label to hold the Logo
+        tk.Label(self, image=self.home_image, borderwidth=0,compound=&quot;center&quot;,highlightthickness = 0, padx=0, pady=30).pack()
+        #Dark Roast Button
+        self.button_1 = tk.Button(self, image=self.button_1_image, bg= &quot;#04043B&quot;, command = lambda: [self.set_dark_temp(), self.navigate_to_window(), self.get_weight_targ_val(), self.get_data()])
+        self.button_1.place(x=150, y=380)
+        #Medium Roast Button
+        self.button_3 = tk.Button(self, image=self.button_3_image, bg= &quot;#04043B&quot;, command = lambda: [self.set_med_temp(), self.navigate_to_window(), self.get_weight_targ_val(), self.get_data()])
+        self.button_3.place(x=350, y=380)
+        #Light Roast Button
+        self.button_2 = tk.Button(self, image=self.button_2_image, bg= &quot;#04043B&quot;, command = lambda: [self.set_light_temp(), self.navigate_to_window(), self.get_weight_targ_val(), self.get_data()])
+        self.button_2.place(x=550, y=380)
+
+        self.back_button = tk.Button(self, text=&quot;Back&quot;, command=self.go_back)
+        self.back_button.place(x=20, y=20)
+
+        self.weight_label = tk.Label(self, text=&quot;Enter Dry Weight (g)&quot;, font=(&quot;Arial&quot;, 15), bg= &quot;#04043B&quot;, fg= &quot;#ff8c00&quot;)
+        self.weight_label.place(x = 300, y= 200)
+
+        self.weight_entry = tk.Spinbox(self, textvariable= self.weight, width=5, from_=0, to=20, font=Font(size=28, weight='bold'))
+        self.weight_entry.place(x= 350, y = 240)
+
+    #Function to Navigate to The Brew Profile Window    
+    def navigate_to_window(self):
+        &quot;&quot;&quot;
+        Switches to the BrewWindow.
+        &quot;&quot;&quot;
+        self.withdraw() 
+        self.another_window = BrewWindow(self)
+    def set_dark_temp(self):
+        &quot;&quot;&quot;
+        Sets the target temperature to 90.
+        &quot;&quot;&quot;
+        s.targ_temp = 90
+    def set_med_temp(self):
+        &quot;&quot;&quot;
+        Sets the target temperature to 98.
+        &quot;&quot;&quot;
+        s.targ_temp = 98
+    def set_light_temp(self):
+        &quot;&quot;&quot;
+        Sets the target temperature to 100.
+        &quot;&quot;&quot;
+        s.targ_temp = 100
+    def get_weight_targ_val(self):
+        &quot;&quot;&quot;
+        Retrieves and sets the target weight value.
+        &quot;&quot;&quot;
+        s.targ_weight = self.weight.get() * 2
+    def go_back(self):
+        &quot;&quot;&quot;
+        Shows the parent window and hides the current window.
+        &quot;&quot;&quot;
+        self.master.deiconify()
+        self.withdraw()
+    def get_data(self):
+        &quot;&quot;&quot;
+        Retrieves data and stores it to a CSV file.
+        &quot;&quot;&quot;
+        field_names = ['Weight', 'Temp', 'Preinfuse Pressure', 'Preinfuse Time', 'Brew Time', 'Pressure Array', 'Time Array']
+        data = {'Weight': s.targ_weight, 'Temp': s.targ_temp, 'Preinfuse Pressure': s.preinfuse_bar, 'Preinfuse Time': s.preinfuse_time, 'Brew Time': s.brew_time, 'Pressure Array': s.targ_pressure_arr, 'Time Array': s.targ_time_arr}
+        with open('data1.csv', 'a') as f_object:
+            dictwriter_object = DictWriter(f_object, fieldnames=field_names)
+            dictwriter_object.writerow(data)
+            f_object.close
+</code></pre>
+<h2 id="class-brewwindow">Class BrewWindow</h2>
+<pre><code class="language-py">class BrewWindow(tk.Toplevel):
+    &quot;&quot;&quot;
+    Brew Profile Window Class.
+
+    Attributes:
+    - parent: The parent window.
+
+    Methods:
+    - __init__(self, parent): Initializes the BrewWindow instance, setting up the window and UI components.
+    - go_to_graph(self): Switches to the ShowGraph window after 5 seconds.
+    &quot;&quot;&quot;
+    def __init__(self, parent):
+        super().__init__(parent)
+        self.title(&quot;Another Window&quot;)
+        # Set Window Size
+        self.geometry(&quot;800x480&quot;)
+        # Set Window Background Color
+        self.configure(bg = &quot;#04043B&quot;)
+        #Import and Place Logo
+        self.home_image = tk.PhotoImage(file=(&quot;image_1.png&quot;))
+        tk.Label(self, image=self.home_image, borderwidth=0,compound=&quot;center&quot;,highlightthickness = 0, padx=0, pady=30).pack()
+
+        # Display Text to show that the Machine is Brewing
+        self.brew_text = tk.Label(self, text=&quot;Brewing...&quot;, font=(&quot;Arial&quot;, 30), bg= &quot;#04043B&quot;, fg= &quot;#ff8c00&quot;)
+        self.brew_text.pack() 
+        # Schedule the go_to_home_page function to be called after 5000 milliseconds (5 seconds)
+        self.after(5000, self.go_to_graph)
+
+    def go_to_graph(self): 
+        &quot;&quot;&quot;
+        Switches to the ShowGraph window after 5 seconds.
+        &quot;&quot;&quot; 
+        self.graph_show_page = ShowGraph(self)
+        self.withdraw()
+</code></pre>
+<h2 id="class-brewcustomwindow">Class BrewCustomWindow</h2>
+<pre><code class="language-py">class BrewCustWindow(tk.Toplevel):
+    &quot;&quot;&quot;
+    Custom Brewing Window Class.
+
+    Attributes:
+    - parent: The parent window.
+
+    Methods:
+    - __init__(self, parent): Initializes the BrewCustWindow instance, setting up the window and UI components.
+    - go_to_graph(self): Switches to the ShowGraph window when the infuse_flag is False.
+    &quot;&quot;&quot;
+    def __init__(self, parent):
+        super().__init__(parent)
+        self.title(&quot;Another Window&quot;)
+        # Set Window Dimesions
+        self.geometry(&quot;800x480&quot;)
+        # Set Background Color of the Window
+        self.configure(bg = &quot;#04043B&quot;)
+        # Make Window Fullscreen 
+        # Import and Place the Logo
+        self.home_image = tk.PhotoImage(file=(&quot;image_1.png&quot;))
+        tk.Label(self, image=self.home_image, borderwidth=0,compound=&quot;center&quot;,highlightthickness = 0, padx=0, pady=30).pack()
+
+        # Display text to show that the Machine is Brewing
+        self.brew_text = tk.Label(self, text=&quot;Brewing...&quot;, font=(&quot;Arial&quot;, 30), bg= &quot;#04043B&quot;, fg = &quot;#ff8c00&quot;)
+        self.brew_text.pack()
+        # Schedule the go_to_home_page function to be called after 5000 milliseconds (5 seconds)
+        while s.infuse_flag is True:
+            pass
+        self.go_to_graph
+    def go_to_graph(self):
+        &quot;&quot;&quot;
+        Switches to the ShowGraph window when the infuse_flag is False.
+        &quot;&quot;&quot;  
+        self.graph_show_page = ShowGraph(self)
+        self.withdraw()        
+</code></pre>
+<h2 id="class-custom-profile-window">Class Custom Profile Window</h2>
+<pre><code class="language-py">class CustomizeWindow(tk.Toplevel):
+    &quot;&quot;&quot;
+    Custom Profile Making Window Class.
+
+    Attributes:
+    - parent: The parent window.
+
+    Methods:
+    - __init__(self, parent): Initializes the CustomizeWindow instance, setting up the window and UI components.
+    - go_to_graph_page(self): Switches to the GraphWindow after setting plot arrays.
+    - set_plot_arrs(self): Sets target time and pressure arrays based on profile data.
+    - go_to_brew_page(self): Switches to the BrewCustWindow after setting plot arrays and starting the infusion thread.
+    - set_dark_temp(self): Sets the target temperature to 95.
+    - set_med_temp(self): Sets the target temperature to 98.
+    - set_light_temp(self): Sets the target temperature to 100.
+    - go_back(self): Clears data, sets plot arrays, and shows the parent window while hiding the current window.
+    - get_data(self): Retrieves data and writes it to a CSV file.
+    &quot;&quot;&quot;
+    def __init__(self, parent):
+        super().__init__(parent)
+        self.title((&quot;Customize Your Profile&quot;))
+        # Set Window Dimensions
+        self.geometry(&quot;800x480&quot;)
+        # Set Window Background
+        self.configure(bg = &quot;#04043B&quot;)
+        # Import Logo and Buttom Image
+        self.home_image = tk.PhotoImage(file=(&quot;image_1.png&quot;))
+        self.button_7_image = tk.PhotoImage(file=(&quot;button_7.png&quot;))
+        self.button_1_image = tk.PhotoImage(file=(&quot;button_1.png&quot;))
+        self.button_2_image = tk.PhotoImage(file=(&quot;button_2.png&quot;))
+        self.button_3_image = tk.PhotoImage(file=(&quot;button_3.png&quot;))
+        # tk.Label(self, image=self.home_image, borderwidth=0,compound=&quot;center&quot;,highlightthickness = 0, padx=0, pady=30).pack()
+        self.canvas = FigureCanvasTkAgg(m.make_plot(s.brew_time, s.preinfuse_time, s.preinfuse_bar),
+                            master = self)  
+        print(&quot;plot made&quot;)
+        self.canvas.draw()
+        print(&quot;drawing&quot;)
+        # placing the canvas on the Tkinter window
+        self.canvas.get_tk_widget().pack()
+        print(&quot;canvas packed&quot;)
+
+        # creating the Matplotlib toolbar
+        self.toolbar = NavigationToolbar2Tk(self.canvas,
+                                self, pack_toolbar = False)
+        print(&quot;toolbar made&quot;)
+        self.toolbar.update()
+        print(&quot;updated&quot;)
+        self.button_1 = tk.Button(self, image=self.button_1_image, bg= &quot;#04043B&quot;, command = lambda: [self.set_dark_temp(), self.go_to_brew_page(), self.get_data()])
+        self.button_1.place(x=150, y=380)
+        #Medium Roast Button
+        self.button_2 = tk.Button(self, image=self.button_3_image, bg= &quot;#04043B&quot;, command = lambda: [self.set_med_temp(), self.go_to_brew_page(), self.get_data()])
+        self.button_2.place(x=350, y=380)
+        #Light Roast Button
+        self.button_2 = tk.Button(self, image=self.button_2_image, bg= &quot;#04043B&quot;, command = lambda: [self.set_light_temp(), self.go_to_brew_page(), self.get_data()])
+        self.button_2.place(x=550, y=380)
+
+        self.back_button = tk.Button(self, text=&quot;Back&quot;, command= self.go_back)
+        self.back_button.place(x=20, y=20)
+
+    def go_to_graph_page(self):
+        &quot;&quot;&quot;
+        Switches to the GraphWindow after setting plot arrays.
+        &quot;&quot;&quot;
+        self.set_plot_arrs()
+        #print('time: {} pressure: {}'.format(s.targ_time_arr, s.targ_pressure_arr))
+        s.profile.create_plot(s.targ_time_arr, s.targ_pressure_arr)
+        self.withdraw()
+
+    def set_plot_arrs(self):
+        &quot;&quot;&quot;
+        Sets target time and pressure arrays based on profile data.
+        &quot;&quot;&quot;
+        #self.delta_t_brew = int((s.brew_time - s.preinfuse_time)/5)
+        s.targ_time_arr, s.targ_pressure_arr = m.get_point_data()
+        s.profile.create_plot(s.targ_time_arr, s.targ_pressure_arr)
+
+    # Function to submit values and go to brew page
+    def go_to_brew_page(self):
+        &quot;&quot;&quot;
+        Switches to the BrewCustWindow after setting plot arrays and starting the infusion thread.
+        &quot;&quot;&quot;
+        global heat_up_thread
+        self.set_plot_arrs()
+        # Go to Brew Page
+        self.brew_window = BrewCustWindow(self)
+        # Hide Custom Profile Window
+        self.withdraw()
+        s.heat_up_flag = False
+        print('Attempting join')
+        heat_up_thread.join()
+        print('Infusing...')
+        s.infuse_flag = True
+        self.infuse = Brewing()
+        self.infuse.start()
+    def set_dark_temp(self):
+        &quot;&quot;&quot;
+        Sets the target temperature to 95.
+        &quot;&quot;&quot;
+        s.targ_temp = 95
+    def set_med_temp(self):
+        &quot;&quot;&quot;
+        Sets the target temperature to 98.
+        &quot;&quot;&quot;
+        s.targ_temp = 98
+    def set_light_temp(self):
+        &quot;&quot;&quot;
+        Sets the target temperature to 100.
+        &quot;&quot;&quot;
+        s.targ_temp = 100
+    def go_back(self):
+        &quot;&quot;&quot;
+        Clears data, sets plot arrays, and shows the parent window while hiding the current window.
+        &quot;&quot;&quot;
+        m.listLabelPoints.clear()
+        self.set_plot_arrs()
+        self.master.deiconify()
+        self.withdraw()
+    def get_data(self):
+        &quot;&quot;&quot;
+        Retrieves data and writes it to a CSV file.
+        &quot;&quot;&quot;
+        field_names = ['Weight', 'Temp', 'Preinfuse Pressure', 'Preinfuse Time', 'Brew Time', 'Pressure Array', 'Time Array']
+        data = {'Weight': s.targ_weight, 'Temp': s.targ_temp, 'Preinfuse Pressure': s.preinfuse_bar, 'Preinfuse Time': s.preinfuse_time, 'Brew Time': s.brew_time, 'Pressure Array': s.targ_pressure_arr, 'Time Array': s.targ_time_arr}
+        with open('data1.csv', 'a') as f_object:
+            dictwriter_object = DictWriter(f_object, fieldnames=field_names)
+            dictwriter_object.writerow(data)
+            f_object.close
+        #df.to_csv('C:/Users/tmiller4/Desktop/DetroitCremaGUI/DetroitCremaGUI/data/data1.csv')
+</code></pre>
+<h2 id="class-textboxes">Class Textboxes</h2>
+<pre><code class="language-py">class TextBoxes(tk.Toplevel):
+    &quot;&quot;&quot;
+    TextBoxes Class for creating a window to set profile parameters.
+
+    Attributes:
+    - parent: The parent window.
+
+    Methods:
+    - __init__(self, parent): Initializes the TextBoxes instance, setting up the window and UI components.
+    - go_to_cust_page(self): Switches to the CustomizeWindow after gathering parameters.
+    - get_pre_val(self): Retrieves preinfuse time value and sets it in the global state.
+    - get_weight_targ_val(self): Retrieves weight value and sets it in the global state.
+    - get_pre_bar(self): Retrieves preinfuse pressure value and sets it in the global state.
+    - get_brew_time(self): Retrieves brew time value and sets it in the global state.
+    - go_back(self): Shows the parent window while hiding the current window.
+    &quot;&quot;&quot;
+    def __init__(self, parent):
+        super().__init__(parent)
+        self.title((&quot;Customize Your Profile&quot;))
+        # Set Window Dimensions
+        self.geometry(&quot;800x480&quot;)
+        # Set Window Background
+        self.configure(bg = &quot;#04043B&quot;)
+        # Make Window Fullscreen
+        #self.attributes('-fullscreen', True)
+
+        self.preinfuse_time = tk.IntVar()  
+        self.preinfuse_bar = tk.IntVar()  
+        self.brew_time = tk.IntVar()                                                                                                                                            
+        self.weight = tk.IntVar()
+        self.home_image = tk.PhotoImage(file=(&quot;image_1.png&quot;))
+
+        tk.Label(self, image=self.home_image, borderwidth=0,compound=&quot;center&quot;,highlightthickness = 0, padx=0, pady=30).pack()
+
+        self.preinfuse_label = tk.Label(self, text=&quot;Set Preinfuse Time (sec)&quot;, font=(&quot;Arial&quot;, 15), bg= &quot;#04043B&quot;, fg= &quot;#ff8c00&quot;)
+        self.preinfuse_label.place(x= 50, y = 150)
+
+        self.preinfuse_entry = tk.Spinbox(self, textvariable = self.preinfuse_time, width=5, from_=0, to=30, font=Font(size=28, weight='bold'))
+        self.preinfuse_entry.place(x = 100, y = 190)
+
+        self.preinfuse_bar_label = tk.Label(self, text=&quot;Set Preinfuse Pressure (Bar)&quot;, font=(&quot;Arial&quot;, 15), bg= &quot;#04043B&quot;, fg= &quot;#ff8c00&quot;)
+        self.preinfuse_bar_label.place(x = 300, y= 150)
+
+        self.preinfuse_bar_entry = tk.Spinbox(self, textvariable= self.preinfuse_bar, width=5, from_=0, to=20, font=Font(size=28, weight='bold'))
+        self.preinfuse_bar_entry.place(x= 350, y = 190)
+
+        self.brew_time_label = tk.Label(self, text=&quot;Set Total Brew Time (sec)&quot;, font=(&quot;Arial&quot;, 15), bg= &quot;#04043B&quot;, fg= &quot;#ff8c00&quot;)
+        self.brew_time_label.place(x = 50, y= 300)
+
+        self.brew_time_entry = tk.Spinbox(self, textvariable= self.brew_time, width=5, from_=0, to=60, font=Font(size=28, weight='bold'))
+        self.brew_time_entry.place(x= 100, y = 340)
+
+        self.weight_label = tk.Label(self, text=&quot;Enter Dry Weight (g)&quot;, font=(&quot;Arial&quot;, 15), bg= &quot;#04043B&quot;, fg= &quot;#ff8c00&quot;)
+        self.weight_label.place(x = 300, y= 300)
+
+        self.weight_entry = tk.Spinbox(self, textvariable= self.weight, width=5, from_=0, to=20, font=Font(size=28, weight='bold'))
+        self.weight_entry.place(x= 350, y = 340)
+
+        self.cust_button = tk.Button(self, text=&quot;Next&quot;, command= lambda: [self.get_pre_val(), self.get_weight_targ_val(), self.get_pre_bar(), self.get_brew_time(), self.go_to_cust_page()])
+        self.cust_button.place(x = 550, y=425)
+
+        self.back_button = tk.Button(self, text=&quot;Back&quot;, command=self.go_back)
+        self.back_button.place(x=20, y=20)
+
+    def go_to_cust_page(self):
+        &quot;&quot;&quot;
+        Switches to the CustomizeWindow after gathering parameters.
+        &quot;&quot;&quot;
+        self.cust_page = CustomizeWindow(self)
+        self.withdraw()
+    def get_pre_val(self):
+        &quot;&quot;&quot;
+        Retrieves preinfuse time value and sets it in the global state.
+        &quot;&quot;&quot;
+        s.preinfuse_time = self.preinfuse_time.get()
+    def get_weight_targ_val(self):
+        &quot;&quot;&quot;
+        Retrieves weight value and sets it in the global state.
+        &quot;&quot;&quot;
+        s.targ_weight = self.weight.get() * 2
+    def get_pre_bar(self):
+        &quot;&quot;&quot;
+        Retrieves preinfuse pressure value and sets it in the global state.
+        &quot;&quot;&quot;
+        s.preinfuse_bar = self.preinfuse_bar.get()
+    def get_brew_time(self):
+        &quot;&quot;&quot;
+        Retrieves brew time value and sets it in the global state.
+        &quot;&quot;&quot;
+        s.brew_time = self.brew_time.get()
+    def go_back(self):
+        &quot;&quot;&quot;
+        Shows the parent window while hiding the current window.
+        &quot;&quot;&quot;
+        self.master.deiconify()
+        self.withdraw()
+</code></pre>
+<h2 id="class-showgraph">Class ShowGraph</h2>
+<pre><code class="language-py">class ShowGraph(tk.Toplevel):
+    &quot;&quot;&quot;
+    ShowGraph Class for creating a window to display a graph.
+
+    Attributes:
+    - parent: The parent window.
+
+    Methods:
+    - __init__(self, parent): Initializes the ShowGraph instance, setting up the window and UI components.
+    - go_to_home_page(self): Switches to the BrewProfileWindow.
+    &quot;&quot;&quot;
+    def __init__(self, parent):
+        super().__init__(parent)
+        self.title((&quot;Customize Your Profile&quot;))
+        # Set Window Dimensions
+        self.geometry(&quot;800x480&quot;)
+        # Set Window Background
+        self.configure(bg = &quot;#04043B&quot;)
+        # Make Window Fullscreen
+        #self.attributes('-fullscreen', True)
+        self.home_image = tk.PhotoImage(file=(&quot;image_1.png&quot;))
+        # self.currentBrewImage = tk.PhotoImage(file=(&quot;BrewGraph.png&quot;))
+        tk.Label(self, image=self.home_image, borderwidth=0,compound=&quot;center&quot;,highlightthickness = 0, padx=0, pady=30).pack()
+
+        self.return_button = tk.Button(self, text=&quot;Home Page&quot;, command=self.go_to_home_page)
+        self.return_button.place(x=20, y=20)
+        # tk.Label(self, image=self.currentBrewImage, borderwidth=0,compound=&quot;center&quot;,highlightthickness = 0, padx=0, pady=30).pack()
+    def go_to_home_page(self):
+        &quot;&quot;&quot;
+        Switches to the BrewProfileWindow.
+        &quot;&quot;&quot;
+        self.home_page = BrewProfileWindow(self)
+        self.withdraw()
+</code></pre>
+<h2 id="main">Main</h2>
+<pre><code class="language-py">if __name__ == &quot;__main__&quot;:
+    app = WelcomePage()
+    app.mainloop()        
+</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.sections", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "contents.code.annotation", "contants.code.copy"], "search": "../assets/javascripts/workers/search.c011b7c0.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.7389ff0e.min.js"></script>
+      
+    
+  </body>
+</html>

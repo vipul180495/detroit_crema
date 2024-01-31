@@ -1,0 +1,41 @@
+site_name: Detroit Crema Documentation
+repo: vipul180495/detroit_crema
+theme:
+  name: material
+  features:
+     - navigation.tabs
+     - navigation.sections
+     - toc.integrate
+     - navigation.top
+     - search.suggest
+     - search.highlight
+     - content.tabs.link
+     - contents.code.annotation
+     - contants.code.copy
+  language: en
+  palette:
+   - scheme: default
+     toggle: 
+     icon: .icons/material/toggle-swtich-off-outline
+     name: Switch to dark mode
+     primary: teal
+     accent: purple
+   - scheme: slate
+     toggle: 
+     icon: .icons/material/toggle-swtich
+     name: Switch to light mode
+     primary: teal
+     accent: lime   
+
+plugins:
+  - mkdocstrings
+  
+nav:
+  - Home: index.md  
+  - Python Scripts:
+    - Main GUI : detroitcremagui.md
+    - Functions: Functions.md 
+    - hx711: hx711.md
+    - PlotProfile: PlotProfile.md
+
+  

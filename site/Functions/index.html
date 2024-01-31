@@ -1,0 +1,975 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../detroitcremagui/">
+      
+      
+        <link rel="next" href="../hx711/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.4">
+    
+    
+      
+        <title>Functions - Detroit Crema Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.50c56a3b.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#libraries-and-imports" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Detroit Crema Documentation" class="md-header__button md-logo" aria-label="Detroit Crema Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Detroit Crema Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Functions
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="purple"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="lime"  aria-hidden="true"  type="radio" name="__palette" id="__palette_1">
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../detroitcremagui/" class="md-tabs__link">
+          
+  
+  Python Scripts
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Detroit Crema Documentation" class="md-nav__button md-logo" aria-label="Detroit Crema Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Detroit Crema Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Python Scripts
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Python Scripts
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../detroitcremagui/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Main GUI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Functions
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Functions
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#libraries-and-imports" class="md-nav__link">
+    <span class="md-ellipsis">
+      Libraries and imports
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#heating-up" class="md-nav__link">
+    <span class="md-ellipsis">
+      Heating Up
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#purge" class="md-nav__link">
+    <span class="md-ellipsis">
+      Purge
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#infuse" class="md-nav__link">
+    <span class="md-ellipsis">
+      Infuse
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#get_temp" class="md-nav__link">
+    <span class="md-ellipsis">
+      Get_Temp
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#get_weight" class="md-nav__link">
+    <span class="md-ellipsis">
+      Get_Weight
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#maintain_temp" class="md-nav__link">
+    <span class="md-ellipsis">
+      Maintain_temp
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#get_pressure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Get_Pressure
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#set-clicks-per-seconds-pressure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Set Clicks per seconds pressure
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#set-clicks-per-seconds-temperaure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Set Clicks per seconds temperaure
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#proportional-derivative-pd_cps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Proportional-Derivative (PD)_CPS
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#proportional-derivative-pd_temp" class="md-nav__link">
+    <span class="md-ellipsis">
+      Proportional-Derivative (PD)_Temp
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#append_lists" class="md-nav__link">
+    <span class="md-ellipsis">
+      Append_Lists
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#retrieve_data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Retrieve_Data
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#begin_temp" class="md-nav__link">
+    <span class="md-ellipsis">
+      Begin_temp
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hx711/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    hx711
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PlotProfile/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PlotProfile
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>Functions</h1>
+
+<p>This page contains functions</p>
+<h2 id="libraries-and-imports">Libraries and imports</h2>
+<pre><code class="language-py">import Setups as s
+import pandas as pd
+</code></pre>
+<h2 id="heating-up">Heating Up</h2>
+<pre><code class="language-py">def Heat_Up():
+    &quot;&quot;&quot;
+    Perform the heating process.
+    This function heats up a system by activating a solenoid, maintaining pressure, and
+    collecting temperature data for a specific duration.
+    Steps:
+    1. Activate the solenoid to start the heating process.
+    2. Maintain pressure until it reaches a threshold (10 in this case).
+    3. Record temperature data and control a relay based on a counter for a certain number of loops.
+    4. The process continues until a specified number of loops is completed.
+    &quot;&quot;&quot;
+    print(&quot;Heating Up!&quot;)
+    s.sol.value = True
+    while s.pressure &lt; 10:
+        s.pressure = s.raw_pressure = (((s.chan.value*.000125) - .506)*4)
+        #print(s.pressure)
+        s.pumpOn = True
+    s.pumpOn = False
+    s.endTime = s.time.time() + (180)
+    s.startTime = s.time.time()
+    s.heat_up_flag = True
+    while s.heat_up_flag is True:
+        if s.loops &gt; 10:
+            #print('Temp: {}  CPS: {}  Elap Time: {}'.format(s.temp_list[s.loops-1], s.cps_T, s.elapsedTime))
+            s.temp = s.thermocouple.temperature
+            Set_CPS_T()
+            s.elapsedTime = s.time.time() - s.startTime
+            s.temp_list.append(s.temp)
+            s.elapsedTime_list.append(s.elapsedTime)
+            while s.click &lt; 100:
+                if s.counter &lt; s.cps_T:
+                    s.rel.value = True
+                else:
+                    s.rel.value = False 
+                s.counter+=1
+                s.click+=1
+
+            s.counter = 0
+            s.click = 0
+            s.loops += 1
+            print(s.temp)
+        if s.loops &lt;= 10:
+            s.temp = s.thermocouple.temperature
+            s.temp_list.append(s.temp)
+            s.elapsedTime = s.time.time() - s.startTime
+            s.elapsedTime_list.append(s.elapsedTime)
+            s.loops += 1
+            #print('loops under 10')
+    s.pumpOn = False
+</code></pre>
+<h2 id="purge">Purge</h2>
+<pre><code class="language-py">def Purge():
+    &quot;&quot;&quot;
+    Perform a purge operation.
+    This function activates a pump and maintains a target temperature for a specified duration
+    to purge the system.
+    Steps:
+    1. Set the relay value to False.
+    2. Activate the pump and maintain temperature for 5 seconds (adjustable).
+    3. Deactivate the pump after the specified duration.
+    This function relies on the 'Maintain_Temp' function to control temperature during the purge.
+    &quot;&quot;&quot;
+    purge_time = s.time.time() + 5
+    s.rel.value = False
+    while s.time.time() &lt; purge_time:
+        Maintain_Temp()
+        s.pumpOn = True
+    s.pumpOn = False
+</code></pre>
+<h2 id="infuse">Infuse</h2>
+<pre><code class="language-py">def Infuse():
+    &quot;&quot;&quot;
+    Perform the infusion process.
+    This function infuses the system with a substance, controlling temperature and collecting
+    data for analysis.
+    Steps:
+    1. Set up flags and variables for the infusion process.
+    2. Collect temperature data, control relay, and maintain temperature until the target is reached.
+    3. Start a thread to continuously monitor temperature.
+    4. Begin the main loop, maintaining temperature, and collecting data.
+    &quot;&quot;&quot;
+    s.infuse_flag = True
+    while s.temp &lt; s.targ_temp:
+        if s.loops &gt; 10:
+            s.temp = s.thermocouple.temperature
+            Set_CPS_T()
+            s.elapsedTime = s.time.time() - s.startTime
+            s.temp_list.append(s.temp)
+            s.elapsedTime_list.append(s.elapsedTime)
+            while s.click &lt; 100:
+                if s.counter &lt; s.cps_T:
+                    s.rel.value = True
+                else:
+                    s.rel.value = False 
+                s.counter+=1
+                s.click+=1
+
+            s.counter = 0
+            s.click = 0
+            s.loops += 1
+            print(s.temp)
+
+    loop_start = 0
+    s.temp_list.clear()
+    s.elapsedTime_list.clear()
+    s.loops = 0
+    temp = s.Thread(target = Get_Temp)
+    temp.start()
+    s.sol.value = False
+    s.prev_loop_time = s.time.time()
+    Begin_Timer()
+    while s.time.time() &lt;= s.endTime:
+        Maintain_Temp()
+        loop_start = s.time.time()
+        Get_Pressure()
+        Get_Weight()
+        Set_CPS_P()
+        Set_CPS_T()
+        s.elapsedTime = s.time.time() - s.startTime
+        Append_Lists()
+        s.loop_end += s.time.time() - loop_start
+        while s.click &lt; 100:  
+            if s.counter &lt; s.cps:
+                s.pumpOn = True
+            else:
+                s.pumpOn = False
+
+            if s.counter &lt; s.cps_T:
+                s.rel.value = True
+            else:
+                s.rel.value = False
+
+
+            s.counter+=1
+            s.click+=1
+        s.counter = 0
+        s.click = 0
+        s.loops += 1
+    print('Avg loop time: {}'.format(s.loop_end/s.loops))
+    Retrieve_Data()
+</code></pre>
+<h2 id="get_temp">Get_Temp</h2>
+<pre><code class="language-py">def Get_Temp():
+    &quot;&quot;&quot;
+    Continuously monitor and update the temperature.
+    This function retrieves temperature data from a thermocouple in a loop until the specified end time.
+    This function is typically used as a thread to continuously monitor temperature during certain processes.
+    &quot;&quot;&quot;
+    k = 0
+    while s.time.time() &lt; s.endTime:
+        try:
+            s.temp = s.thermocouple.temperature
+            k += 1
+        except:
+            pass    
+</code></pre>
+<h2 id="get_weight">Get_Weight</h2>
+<pre><code class="language-py">def Get_Weight():
+    &quot;&quot;&quot;
+    Retrieve and process weight data.
+    This function retrieves weight data from a sensor, processes it, and updates the global weight variable.
+    Steps:
+    1. Retrieve raw weight data and convert it to grams.
+    2. Apply filtering to ensure smooth weight updates.
+    3. Update the global weight variable.
+    This function is designed to handle exceptions and set weight to 0 if an error occurs.
+    &quot;&quot;&quot;
+    try:
+        w = (s.hx.get_value(1)/s.raw_to_gram)
+        if w &gt; s.weight_list[s.loops-1] + 1:
+            w = s.weight_list[s.loops-1] + 1
+        if w &lt; s.weight_list[s.loops-1] - 1:
+            w = s.weight_list[s.loops-1] - 1
+        s.weight = (s.np.exp(-.105)*s.weight_list[s.loops-1] + w*.1)
+        print(s.weight)
+    except:
+        s.weight = 0 
+</code></pre>
+<h2 id="maintain_temp">Maintain_temp</h2>
+<pre><code class="language-py">def Maintain_Temp():
+    &quot;&quot;&quot;
+    Maintain the target temperature.
+    This function adjusts the control parameter for temperature to ensure it stays within acceptable bounds.
+    Steps:
+    1. Set the control parameter for temperature (CPS_T).
+    2. Ensure CPS_T is within a specific range.
+    3. If CPS_T is greater than 100, set it to 100. If it is less than or equal to 0, set it to 1.
+    &quot;&quot;&quot;
+    Set_CPS_T()
+    if s.cps_T &gt; 100:
+        s.cps_T = 100
+    if s.cps_T &lt;= 0:
+        s.cps_T = 1
+</code></pre>
+<h2 id="get_pressure">Get_Pressure</h2>
+<pre><code class="language-py">def Get_Pressure():
+    &quot;&quot;&quot;
+    Retrieve and update pressure data.
+    This function calculates the pressure based on raw sensor data and updates global pressure variables.
+    Steps:
+    1. If loops are greater than 0, apply exponential filtering to the pressure data.
+    2. If loops are 0, set pressure and previous pressure directly based on raw sensor data.
+    &quot;&quot;&quot;
+    print('Loops is: {}'.format(s.loops))
+    if s.loops &gt; 0:
+        s.raw_pressure = (((s.chan.value*.000125) - .506)*4)
+        #s.pressure = s.np.exp(-.02)*s.pressure_list[s.loops-1]+.02*s.raw_pressure
+        s.pressure = s.np.exp(-.02)*s.prev_pressure +.02*s.raw_pressure
+        s.prev_pressure = s.pressure
+    else:
+        s.pressure = (((s.chan.value*.000125) - .506)*4)
+        s.prev_pressure = s.pressure
+</code></pre>
+<h2 id="set-clicks-per-seconds-pressure">Set Clicks per seconds pressure</h2>
+<pre><code class="language-py">def Set_CPS_P():
+    &quot;&quot;&quot;
+    Set the control parameter for pressure (CPS).
+    This function adjusts the control parameter for pressure and ensures it stays within acceptable bounds.
+    Steps:
+    1. Apply a Proportional-Derivative (PD) control algorithm to adjust CPS.
+    2. Ensure CPS is within a specific range.
+    3. If CPS is greater than 100, set it to 100. If it is less than or equal to 0, set it to 1.
+    &quot;&quot;&quot;
+    s.cps = PD_CPS(s.cps)
+    if s.cps &gt; 100:
+        s.cps = 100
+    if s.cps &lt;= 0:
+        s.cps = 1
+</code></pre>
+<h2 id="set-clicks-per-seconds-temperaure">Set Clicks per seconds temperaure</h2>
+<pre><code class="language-py">def Set_CPS_T():
+    &quot;&quot;&quot;
+    Set the control parameter for temperature (CPS_T).
+    This function adjusts the control parameter for temperature and ensures it stays within acceptable bounds.
+    Steps:
+    1. Apply a Proportional-Derivative (PD) control algorithm to adjust CPS_T.
+    2. Ensure CPS_T is within a specific range.
+    3. If CPS_T is greater than 100, set it to 100. If it is less than or equal to 0, set it to 1.
+    &quot;&quot;&quot;
+    s.cps_T = PD_Temp(s.cps_T)
+    if s.cps_T &gt; 100:
+        s.cps_T = 100
+    if s.cps_T &lt;= 0:
+        s.cps_T = 1
+</code></pre>
+<h2 id="proportional-derivative-pd_cps">Proportional-Derivative (PD)_CPS</h2>
+<pre><code class="language-py">def PD_CPS(cps):
+    &quot;&quot;&quot;
+    Proportional-Derivative (PD) control algorithm for adjusting CPS.
+    This function calculates the change in CPS based on the error and its derivative.
+    Args:
+        cps (float): Current control parameter for pressure.
+    Returns:
+        float: New control parameter for pressure after applying the PD control algorithm.
+    &quot;&quot;&quot;
+    kp = 1.9
+    kd = .4
+    delta_t = s.time.time() - s.prev_loop_time_P
+    try:
+        pd_dot = (s.profile.getPressureTarg(s.elapsedTime + delta_t) - s.profile.getPressureTarg(s.elapsedTime))/delta_t
+        p_dot = (s.pressure - s.pressure_list[s.loops - 1])/delta_t
+        e = s.profile.getPressureTarg(s.elapsedTime) - s.pressure
+        e_dot = pd_dot - p_dot
+        s.delta_cps = (kp*e) + (kd*e_dot)
+        new_cps = cps + s.delta_cps
+        s.prev_loop_time_P = s.time.time()
+        return new_cps
+    except:
+        s.prev_loop_time_P = s.time.time()
+        return s.cps
+</code></pre>
+<h2 id="proportional-derivative-pd_temp">Proportional-Derivative (PD)_Temp</h2>
+<pre><code class="language-py">def PD_Temp(cps_T):
+    &quot;&quot;&quot;
+    Proportional-Derivative (PD) control algorithm for adjusting CPS_T based on temperature.
+    This function calculates the change in CPS_T based on the error and its derivative.
+    Args:
+        cps_T (float): Current control parameter for temperature.
+    Returns:
+        float: New control parameter for temperature after applying the PD control algorithm.
+    &quot;&quot;&quot;
+    if s.heat_up_flag is True:
+        kp = 6
+        kd = 12
+    else:
+        kp = 6
+        kd = 12
+    delta_t = .09 # 90 ms sampling rate
+    try:
+        pd_dot = 0
+        p_dot = (s.temp - s.temp_list[s.loops - 1])/delta_t
+        e = s.targ_temp - s.temp
+        e_dot = pd_dot - p_dot
+        s.delta_cps_T = (kp*e) + (kd*e_dot)
+        new_cps = cps_T + s.delta_cps_T
+        return new_cps 
+    except:
+        return s.cps_T
+</code></pre>
+<h2 id="append_lists">Append_Lists</h2>
+<pre><code class="language-py">def Append_Lists():
+    &quot;&quot;&quot;
+    Append data to various lists for logging and analysis.
+    This function appends data related to weight, pressure, control parameters, elapsed time, and temperature
+    to their respective lists.
+    &quot;&quot;&quot;
+    s.weight_list.append(s.weight)
+    if s.elapsedTime &lt; s.profile.time.max():
+        s.expected_pressure_list.append(s.profile.getPressureTarg(s.elapsedTime))
+    s.pressure_list.append(s.pressure)
+    s.raw_pressure_list.append(s.raw_pressure)
+    s.cps_list.append(s.cps)
+    s.cps_temp_list.append(s.cps_T)
+    s.delta_cps_list.append(s.delta_cps) 
+    s.delta_cps_list_T.append(s.delta_cps_T)
+    s.elapsedTime_list.append(s.elapsedTime)
+    s.temp_list.append(s.temp)
+    #print(s.elapsedTime, s.weight)
+</code></pre>
+<h2 id="retrieve_data">Retrieve_Data</h2>
+<pre><code class="language-py">def Retrieve_Data():
+    &quot;&quot;&quot;
+    Retrieve data and save it to a CSV file.
+    This function creates a DataFrame from collected data and saves it to a CSV file.
+    &quot;&quot;&quot;
+    dict = {'Temp': s.temp_list, 'Elapsed Time': s.elapsedTime_list}
+    df = pd.DataFrame(dict)
+    df.to_csv('/home/centrepolis/Desktop/Temp CSV/test1.csv')
+</code></pre>
+<h2 id="begin_temp">Begin_temp</h2>
+<pre><code class="language-py">def Begin_Timer():
+    &quot;&quot;&quot;
+    Begin the timer for the process.
+    This function initializes the start time and end time for the process based on the provided profile.
+    &quot;&quot;&quot;
+    s.startTime = s.time.time()
+    #s.preinfuseTime = s.time.time() + preInfuseTime
+    s.endTime = s.time.time() + s.profile.time.max()
+</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.sections", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "contents.code.annotation", "contants.code.copy"], "search": "../assets/javascripts/workers/search.c011b7c0.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.7389ff0e.min.js"></script>
+      
+    
+  </body>
+</html>
